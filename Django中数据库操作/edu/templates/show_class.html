@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示班级信息</title>
+</head>
+<body>
+{% for cls in class %}
+    id: {{ cls.id }}
+    <a href="/appstu/showstu/?p={{cls.id}}">班级：{{ cls.c_name }}</a>
+    描述：{{ cls.c_desc }}
+    <br />
+{% endfor %}
+
+</body>
+</html>

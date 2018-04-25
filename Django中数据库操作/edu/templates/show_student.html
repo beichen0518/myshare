@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>显示学生信息</title>
+</head>
+<body>
+    {% for student in students %}
+        id : {{ student.id }}
+        姓名 ：{{ student.stu_name }}
+        <br />
+    {% endfor %}
+</body>
+</html>
